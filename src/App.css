@@ -112,6 +112,52 @@ h2.clock-city {
   text-decoration: underline;
 }
 
+.custom-city-form {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.custom-city-form form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.custom-city-form input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: white;
+}
+
+.custom-city-form button {
+  padding: 0.5rem 1rem;
+  background-color: #1e1e2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-city-form button:hover {
+  background-color: #333;
+}
+
+.input-field-city {
+  color: white;
+  font-size: 16px;
+}
+
+.input-field-tz {
+  width: 230px;
+}
+
+::placeholder {
+  color: white;
+}
+
 main {
   padding: 2rem;
   max-width: 1200px;

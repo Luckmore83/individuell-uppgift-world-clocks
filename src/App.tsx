@@ -37,12 +37,21 @@ export default function App() {
   if (savedCity) {
     setLastVisitedCity(savedCity);
   }
+    
+    const savedCustomCities = localStorage.getItem("customCities");
+  if (savedCustomCities) {
+    setCustomCities(JSON.parse(savedCustomCities));
+  }
   }, []);
 
   const handleCityClick = (cityName: string) => {
   localStorage.setItem("lastVisitedCity", cityName);
   setLastVisitedCity(cityName);
 };
+
+const [customCity, setCustomCity] = useState("");
+const [customTimeZone, setCustomTimeZone] = useState("");
+const [customCities, setCustomCities] = useState<City[]>([]);
 
     return (
     <Routes>
@@ -65,6 +74,44 @@ export default function App() {
           </p>
         </div>
       )}
+
+      <div className="custom-city-form">
+  <h2>Add Your Own City</h2>
+  <form
+    onSubmit={(e) => {
+      e.preventDefault();
+      if (customCity && customTimeZone) {
+        const newCity = {
+          city: customCity,
+          country: "Custom",
+          countryCode: "XX",
+          timeZone: customTimeZone
+        };
+        const updated = [...customCities, newCity];
+        setCustomCities(updated);
+        localStorage.setItem("customCities", JSON.stringify(updated));
+        setCustomCity("");
+        setCustomTimeZone("");
+      }
+    }}
+  >
+    <input className="input-field-city"
+      type="text"
+      placeholder="City name"
+      value={customCity}
+      onChange={(e) => setCustomCity(e.target.value)}
+      required
+    />
+    <input className="input-field-tz"
+      type="text"
+      placeholder="IANA Time Zone (e.g. Europe/London)"
+      value={customTimeZone}
+      onChange={(e) => setCustomTimeZone(e.target.value)}
+      required
+    />
+    <button type="submit">Add City</button>
+  </form>
+</div>
 
       <section className="clock-grid" aria-label="City clocks">
         {cities.map((city) => (
