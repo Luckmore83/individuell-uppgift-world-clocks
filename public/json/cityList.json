@@ -1,240 +1,230 @@
 [
   {
-    "city": "New York",
-    "country": "United States",
-    "countryCode": "us",
-    "timeZone": "America/New_York",
-    "hour12": true
-  },
-  {
-    "city": "Los Angeles",
-    "country": "United States",
-    "countryCode": "us",
-    "timeZone": "America/Los_Angeles",
-    "hour12": true
-  },
-  {
-    "city": "Chicago",
-    "country": "United States",
-    "countryCode": "us",
-    "timeZone": "America/Chicago",
-    "hour12": true
-  },
-  {
-    "city": "Miami",
-    "country": "United States",
-    "countryCode": "us",
-    "timeZone": "America/New_York",
-    "hour12": true
-  },
-  {
-    "city": "Toronto",
-    "country": "Canada",
-    "countryCode": "ca",
-    "timeZone": "America/Toronto",
-    "hour12": true
-  },
-  {
-    "city": "Vancouver",
-    "country": "Canada",
-    "countryCode": "ca",
-    "timeZone": "America/Vancouver",
-    "hour12": true
-  },
-  {
-    "city": "London",
-    "country": "United Kingdom",
-    "countryCode": "gb",
-    "timeZone": "Europe/London",
-    "hour12": false
-  },
-  {
-    "city": "Paris",
-    "country": "France",
-    "countryCode": "fr",
-    "timeZone": "Europe/Paris",
-    "hour12": false
-  },
-  {
-    "city": "Berlin",
-    "country": "Germany",
-    "countryCode": "de",
-    "timeZone": "Europe/Berlin",
-    "hour12": false
-  },
-  {
-    "city": "Madrid",
-    "country": "Spain",
-    "countryCode": "es",
-    "timeZone": "Europe/Madrid",
-    "hour12": false
-  },
-  {
-    "city": "Rome",
-    "country": "Italy",
-    "countryCode": "it",
-    "timeZone": "Europe/Rome",
-    "hour12": false
-  },
-  {
     "city": "Amsterdam",
     "country": "Netherlands",
     "countryCode": "nl",
-    "timeZone": "Europe/Amsterdam",
-    "hour12": false
+    "timeZone": "Europe/Amsterdam"
   },
   {
-    "city": "Moscow",
-    "country": "Russia",
-    "countryCode": "ru",
-    "timeZone": "Europe/Moscow",
-    "hour12": false
-  },
-  {
-    "city": "Saint Petersburg",
-    "country": "Russia",
-    "countryCode": "ru",
-    "timeZone": "Europe/Moscow",
-    "hour12": false
-  },
-  {
-    "city": "Tokyo",
-    "country": "Japan",
-    "countryCode": "jp",
-    "timeZone": "Asia/Tokyo",
-    "hour12": false
-  },
-  {
-    "city": "Osaka",
-    "country": "Japan",
-    "countryCode": "jp",
-    "timeZone": "Asia/Tokyo",
-    "hour12": false
-  },
-  {
-    "city": "Seoul",
-    "country": "South Korea",
-    "countryCode": "kr",
-    "timeZone": "Asia/Seoul",
-    "hour12": false
-  },
-  {
-    "city": "Beijing",
-    "country": "China",
-    "countryCode": "cn",
-    "timeZone": "Asia/Shanghai",
-    "hour12": false
-  },
-  {
-    "city": "Shanghai",
-    "country": "China",
-    "countryCode": "cn",
-    "timeZone": "Asia/Shanghai",
-    "hour12": false
-  },
-  {
-    "city": "Hong Kong",
-    "country": "China",
-    "countryCode": "hk",
-    "timeZone": "Asia/Hong_Kong",
-    "hour12": false
-  },
-  {
-    "city": "Singapore",
-    "country": "Singapore",
-    "countryCode": "sg",
-    "timeZone": "Asia/Singapore",
-    "hour12": false
+    "city": "Athens",
+    "country": "Greece",
+    "countryCode": "gr",
+    "timeZone": "Europe/Athens"
   },
   {
     "city": "Bangkok",
     "country": "Thailand",
     "countryCode": "th",
-    "timeZone": "Asia/Bangkok",
-    "hour12": false
+    "timeZone": "Asia/Bangkok"
   },
   {
-    "city": "Mumbai",
-    "country": "India",
-    "countryCode": "in",
-    "timeZone": "Asia/Kolkata",
-    "hour12": false
+    "city": "Beijing",
+    "country": "China",
+    "countryCode": "cn",
+    "timeZone": "Asia/Shanghai"
   },
   {
-    "city": "Delhi",
-    "country": "India",
-    "countryCode": "in",
-    "timeZone": "Asia/Kolkata",
-    "hour12": false
-  },
-  {
-    "city": "Dubai",
-    "country": "United Arab Emirates",
-    "countryCode": "ae",
-    "timeZone": "Asia/Dubai",
-    "hour12": false
+    "city": "Berlin",
+    "country": "Germany",
+    "countryCode": "de",
+    "timeZone": "Europe/Berlin"
   },
   {
     "city": "Cairo",
     "country": "Egypt",
     "countryCode": "eg",
-    "timeZone": "Africa/Cairo",
-    "hour12": false
+    "timeZone": "Africa/Cairo"
   },
   {
-    "city": "Johannesburg",
-    "country": "South Africa",
-    "countryCode": "za",
-    "timeZone": "Africa/Johannesburg",
-    "hour12": false
+    "city": "Chicago",
+    "country": "United States",
+    "countryCode": "us",
+    "timeZone": "America/Chicago"
   },
   {
-    "city": "Sydney",
-    "country": "Australia",
-    "countryCode": "au",
-    "timeZone": "Australia/Sydney",
-    "hour12": false
+    "city": "Dallas",
+    "country": "United States",
+    "countryCode": "us",
+    "timeZone": "America/Dallas"
   },
   {
-    "city": "Melbourne",
-    "country": "Australia",
-    "countryCode": "au",
-    "timeZone": "Australia/Melbourne",
-    "hour12": false
+    "city": "Delhi",
+    "country": "India",
+    "countryCode": "in",
+    "timeZone": "Asia/Kolkata"
   },
   {
-    "city": "Mexico City",
-    "country": "Mexico",
-    "countryCode": "mx",
-    "timeZone": "America/Mexico_City",
-    "hour12": true
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "countryCode": "ae",
+    "timeZone": "Asia/Dubai"
   },
   {
-    "city": "Sao Paulo",
-    "country": "Brazil",
-    "countryCode": "br",
-    "timeZone": "America/Sao_Paulo",
-    "hour12": true
-  },
-  {
-    "city": "Rio de Janeiro",
-    "country": "Brazil",
-    "countryCode": "br",
-    "timeZone": "America/Sao_Paulo",
-    "hour12": true
+    "city": "Hong Kong",
+    "country": "China",
+    "countryCode": "hk",
+    "timeZone": "Asia/Hong_Kong"
   },
   {
     "city": "Honolulu",
     "country": "United States",
     "countryCode": "us",
-    "timeZone": "Pacific/Honolulu",
-    "hour12": true
+    "timeZone": "Pacific/Honolulu"
   },
   {
-    "city": "Adak",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "countryCode": "za",
+    "timeZone": "Africa/Johannesburg"
+  },
+  {
+    "city": "London",
+    "country": "United Kingdom",
+    "countryCode": "gb",
+    "timeZone": "Europe/London"
+  },
+  {
+    "city": "Los Angeles",
     "country": "United States",
     "countryCode": "us",
-    "timeZone": "America/Adak",
-    "hour12": true
-  }
+    "timeZone": "America/Los_Angeles"
+  },
+  {
+    "city": "Madrid",
+    "country": "Spain",
+    "countryCode": "es",
+    "timeZone": "Europe/Madrid"
+  },
+  {
+    "city": "Melbourne",
+    "country": "Australia",
+    "countryCode": "au",
+    "timeZone": "Australia/Melbourne"
+  },
+  {
+    "city": "Mexico City",
+    "country": "Mexico",
+    "countryCode": "mx",
+    "timeZone": "America/Mexico_City"
+  },
+  {
+    "city": "Miami",
+    "country": "United States",
+    "countryCode": "us",
+    "timeZone": "America/New_York"
+  },
+  {
+    "city": "Moscow",
+    "country": "Russia",
+    "countryCode": "ru",
+    "timeZone": "Europe/Moscow"
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "countryCode": "in",
+    "timeZone": "Asia/Kolkata"
+  },
+  {
+    "city": "New York",
+    "country": "United States",
+    "countryCode": "us",
+    "timeZone": "America/New_York"
+  },
+  {
+    "city": "Osaka",
+    "country": "Japan",
+    "countryCode": "jp",
+    "timeZone": "Asia/Tokyo"
+  },
+  {
+    "city": "Paris",
+    "country": "France",
+    "countryCode": "fr",
+    "timeZone": "Europe/Paris"
+  },
+  {
+    "city": "Reykjavik",
+    "country": "Iceland",
+    "countryCode": "ic",
+    "timeZone": "Europe/Reykjavik"
+  },
+  {
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "countryCode": "br",
+    "timeZone": "America/Sao_Paulo"
+  },
+  {
+    "city": "Rome",
+    "country": "Italy",
+    "countryCode": "it",
+    "timeZone": "Europe/Rome"
+  },
+  {
+    "city": "Saint Petersburg",
+    "country": "Russia",
+    "countryCode": "ru",
+    "timeZone": "Europe/Moscow"
+  },
+  {
+    "city": "Sao Paulo",
+    "country": "Brazil",
+    "countryCode": "br",
+    "timeZone": "America/Sao_Paulo"
+  },
+  {
+    "city": "Seoul",
+    "country": "South Korea",
+    "countryCode": "kr",
+    "timeZone": "Asia/Seoul"
+  },
+  {
+    "city": "Singapore",
+    "country": "Singapore",
+    "countryCode": "sg",
+    "timeZone": "Asia/Singapore"
+  },
+  {
+    "city": "Shanghai",
+    "country": "China",
+    "countryCode": "cn",
+    "timeZone": "Asia/Shanghai"
+  },
+  {
+    "city": "Stockholm",
+    "country": "Sweden",
+    "countryCode": "se",
+    "timeZone": "Europe/Stockholm"
+  },
+  {
+    "city": "Sydney",
+    "country": "Australia",
+    "countryCode": "au",
+    "timeZone": "Australia/Sydney"
+  },
+  {
+    "city": "Tokyo",
+    "country": "Japan",
+    "countryCode": "jp",
+    "timeZone": "Asia/Tokyo"
+  },
+  {
+    "city": "Toronto",
+    "country": "Canada",
+    "countryCode": "ca",
+    "timeZone": "America/Toronto"
+  },
+  {
+    "city": "Ulan Bator",
+    "country": "Mongolia",
+    "countryCode": "mo",
+    "timeZone": "Asia/Ulan_Bator"
+  },
+  {
+    "city": "Vancouver",
+    "country": "Canada",
+    "countryCode": "ca",
+    "timeZone": "America/Vancouver"
+  }  
 ]
