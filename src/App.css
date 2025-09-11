@@ -15,6 +15,18 @@ h1 {
   margin: 0;
 }
 
+a :hover {
+  color: rgb(116, 116, 255);
+}
+
+.help-link {
+  font-size: 24px;
+}
+
+.IANA {
+  color: gold;
+}
+
 .clock-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

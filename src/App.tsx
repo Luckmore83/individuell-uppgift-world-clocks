@@ -111,10 +111,14 @@ const [customCities, setCustomCities] = useState<City[]>([]);
     />
     <button type="submit">Add City</button>
   </form>
+  <p className="help-link">
+  IANA time zones here:
+  <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" className="IANA"> IANA Time Zones</a>
+</p>
 </div>
 
       <section className="clock-grid" aria-label="City clocks">
-        {cities.map((city) => (
+        {[...cities, ...customCities].map((city) => (
           <CityCard 
           key={city.city} 
           city={city} 
