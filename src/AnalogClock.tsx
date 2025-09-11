@@ -14,11 +14,11 @@ export default function AnalogClock(props: AnalogClockProps) {
     const requestAnimationFrameHolder =
       clockAnimation({
         canvas: canvasRef.current,
-        ...props // includes timezone now
+        ...props 
       });
 
     return () => cancelAnimationFrame(requestAnimationFrameHolder.latest);
-  }, [props]); // re-run if timezone or settings change
+  }, [props]); 
 
   return (
     <>

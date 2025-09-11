@@ -14,21 +14,21 @@ export default function DigitalClock({ timezone }: DigitalClockProps) {
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
-        hour12: false, // set to true if you prefer 12-hour clocks
+        hour12: false,
         timeZone: timezone,
       });
       setTime(formatter.format(now));
     };
 
-    updateTime(); // run once immediately
+    updateTime();
     const interval = setInterval(updateTime, 1000);
 
     return () => clearInterval(interval);
   }, [timezone]);
 
   return (
-    <div className="clock-digital">
-      <span>{time}</span>
-    </div>
+    <time className="clock-digital">
+      {time}
+    </time>
   );
 }

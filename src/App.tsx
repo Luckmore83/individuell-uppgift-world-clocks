@@ -1,5 +1,5 @@
 import './App.css'
-import CityCard from './components/cityCard';
+import CityCard from './components/CityCard';
 import { useState, useEffect } from "react";
 import DigitalClock from "./DigitalClock";
 import AnalogClock from './AnalogClock';
@@ -24,7 +24,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    fetch("/cityList.json")
+    fetch("/json/cityList.json")
       .then((res) => res.json())
       .then((data) => setCities(data))
       .catch((err) => console.error("Error loading cities:", err));

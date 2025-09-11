@@ -45,7 +45,7 @@
     "city": "Dallas",
     "country": "United States",
     "countryCode": "us",
-    "timeZone": "America/Dallas"
+    "timeZone": "America/Chicago"
   },
   {
     "city": "Delhi",
@@ -147,7 +147,7 @@
     "city": "Reykjavik",
     "country": "Iceland",
     "countryCode": "ic",
-    "timeZone": "Europe/Reykjavik"
+    "timeZone": "Atlantic/Reykjavik"
   },
   {
     "city": "Rio de Janeiro",
