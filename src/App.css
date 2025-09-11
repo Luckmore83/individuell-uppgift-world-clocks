@@ -73,6 +73,33 @@ h2.clock-city {
   margin: 1rem auto;
 }
 
+.city-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.city-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.city-page img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.city-page .digital-clock {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 1rem;
+}
+
 main {
   padding: 2rem;
   max-width: 1200px;

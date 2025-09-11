@@ -1,5 +1,6 @@
 import AnalogClock from '../AnalogClock';
 import DigitalClock from '../DigitalClock';
+import { Link } from "react-router-dom";
 import type { AnalogClockSettings } from '../interfaces/AnalogClock';
 
 interface City {
@@ -19,10 +20,8 @@ export default function CityCard({city, settings, onSelect }: CityCardProps) {
   const imageUrl = `/images/${imageFileName}`;
   
   return (
-    <article className="clock-card" onClick={() => onSelect(city.city)} style={{ cursor: 'pointer' }}>
-      <h2 className="clock-city">
-        {city.city}, {city.country}
-      </h2>
+    <Link to={`/city/${city.city.toLowerCase()}`} className="clock-card" onClick={() => onSelect(city.city)} style={{ cursor: 'pointer' }}>
+      <h2 className="clock-city">{city.city}, {city.country}</h2>
 
       <AnalogClock {...settings} timezone={city.timeZone} />
 
@@ -39,6 +38,6 @@ export default function CityCard({city, settings, onSelect }: CityCardProps) {
         />
         <figcaption>{city.city}</figcaption>
       </figure>
-    </article>
+    </Link>
   );
 }

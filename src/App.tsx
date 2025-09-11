@@ -1,4 +1,6 @@
 import './App.css'
+import { Routes, Route } from "react-router-dom";
+import CityPage from "./pages/CityPage"; // import your new page
 import CityCard from './components/CityCard';
 import { useState, useEffect } from "react";
 import DigitalClock from "./DigitalClock";
@@ -42,12 +44,14 @@ export default function App() {
 };
 
     return (
-    <>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <main>
       <header>
         <h1>World Clocks</h1>
       </header>
-    
-    <main>
       <section className="clock-grid" aria-label="City clocks">
         {cities.map((city) => (
           <CityCard 
@@ -58,7 +62,10 @@ export default function App() {
         ))}
       </section>
     </main>
-    </>
+        }
+    />
+    <Route path="/city/:name" element={<CityPage />} />
+    </Routes>
   );
 }
 
