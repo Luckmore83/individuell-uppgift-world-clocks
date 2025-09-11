@@ -14,6 +14,7 @@ interface City {
 
 export default function App() {
   const [cities, setCities] = useState<City[]>([]);
+  const [lastVisitedCity, setLastVisitedCity] = useState<string | null>(null);
 
   const analogSettings: AnalogClockSettings = {
     faceColor: '#f4f4f4',
@@ -28,7 +29,17 @@ export default function App() {
       .then((res) => res.json())
       .then((data) => setCities(data))
       .catch((err) => console.error("Error loading cities:", err));
+
+      const savedCity = localStorage.getItem("lastVisitedCity");
+  if (savedCity) {
+    setLastVisitedCity(savedCity);
+  }
   }, []);
+
+  const handleCityClick = (cityName: string) => {
+  localStorage.setItem("lastVisitedCity", cityName);
+  setLastVisitedCity(cityName);
+};
 
     return (
     <>
@@ -39,7 +50,11 @@ export default function App() {
     <main>
       <section className="clock-grid" aria-label="City clocks">
         {cities.map((city) => (
-          <CityCard key={city.city} city={city} settings={analogSettings} />
+          <CityCard 
+          key={city.city} 
+          city={city} 
+          settings={analogSettings}
+          onSelect={handleCityClick} />
         ))}
       </section>
     </main>

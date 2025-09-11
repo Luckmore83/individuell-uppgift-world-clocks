@@ -8,12 +8,18 @@ interface City {
   timeZone: string;
 }
 
-export default function CityCard({city, settings }: CityCardProps) {
+interface CityCardProps {
+  city: City;
+  settings: AnalogClockSettings;
+  onSelect: (cityName: string) => void;
+}
+
+export default function CityCard({city, settings, onSelect }: CityCardProps) {
   const imageFileName = city.city.toLowerCase().replace(/\s+/g, '_') + '.jpg';
   const imageUrl = `/images/${imageFileName}`;
   
   return (
-    <article className="clock-card">
+    <article className="clock-card" onClick={() => onSelect(city.city)} style={{ cursor: 'pointer' }}>
       <h2 className="clock-city">
         {city.city}, {city.country}
       </h2>
