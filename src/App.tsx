@@ -16,8 +16,7 @@ interface City {
 
 export default function App() {
   const [cities, setCities] = useState<City[]>([]);
-  const [lastVisitedCity, setLastVisitedCity] = useState<string | null>(null);
-
+  
   const analogSettings: AnalogClockSettings = {
     faceColor: '#f4f4f4',
     borderColor: '#800000',
@@ -25,6 +24,8 @@ export default function App() {
     largeColor: '#800000',
     secondColor: '#ff7f50'
   };
+
+  const [lastVisitedCity, setLastVisitedCity] = useState<string | null>(null);
 
   useEffect(() => {
     fetch("/json/cityList.json")
@@ -52,6 +53,19 @@ export default function App() {
       <header>
         <h1>World Clocks</h1>
       </header>
+
+      
+      {lastVisitedCity && (
+        <div className="last-visited">
+          <p>
+            You last visited{" "}
+            <a href={`/city/${lastVisitedCity.toLowerCase()}`}>
+              <strong>{lastVisitedCity}</strong>
+            </a>
+          </p>
+        </div>
+      )}
+
       <section className="clock-grid" aria-label="City clocks">
         {cities.map((city) => (
           <CityCard 

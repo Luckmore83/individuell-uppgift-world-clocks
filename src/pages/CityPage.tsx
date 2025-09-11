@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
 import DigitalClock from "../DigitalClock";
 import AnalogClock from "../AnalogClock";
 import type { AnalogClockSettings } from "../interfaces/AnalogClock";
@@ -19,7 +20,13 @@ export default function CityPage() {
 
   const city = cities.find(c => c.city.toLowerCase() === name?.toLowerCase());
 
-  if (!city) return <p>City not found</p>;
+  useEffect(() => {
+  if (city) {
+    localStorage.setItem("lastVisitedCity", city.city); // just the name
+  }
+}, [city]);
+  
+    if (!city) return <p>City not found</p>;
 
   const imageFileName = city.city.toLowerCase().replace(/\s+/g, "_") + ".jpg";
 

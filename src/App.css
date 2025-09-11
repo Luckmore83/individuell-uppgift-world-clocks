@@ -100,6 +100,18 @@ h2.clock-city {
   margin-top: 1rem;
 }
 
+.last-visited {
+  text-align: center;
+  margin: 1rem auto;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.last-visited a {
+  color: #ffeb3b;
+  text-decoration: underline;
+}
+
 main {
   padding: 2rem;
   max-width: 1200px;
