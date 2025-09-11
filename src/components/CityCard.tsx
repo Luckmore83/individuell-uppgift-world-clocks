@@ -8,30 +8,27 @@ interface City {
   timeZone: string;
 }
 
-export default function CityCard({
-  city,
-  settings,
-}: {
-  city: City;
-  settings: AnalogClockSettings;
-}) {
+export default function CityCard({city, settings }: CityCardProps) {
+  const imageFileName = city.city.toLowerCase().replace(/\s+/g, '_') + '.jpg';
+  const imageUrl = `/images/${imageFileName}`;
+  
   return (
     <article className="clock-card">
       <h2 className="clock-city">
         {city.city}, {city.country}
       </h2>
 
-      {/* Analog clock */}
       <AnalogClock {...settings} timezone={city.timeZone} />
 
-      {/* Digital clock */}
       <DigitalClock timezone={city.timeZone} />
 
-      {/* Optional: city image */}
       <figure>
         <img
-          src={`https://source.unsplash.com/800x450/?${encodeURIComponent(city.city)}`}
+          src={imageUrl}
           alt={`View of ${city.city}`}
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).src = '/images/default.jpg';
+          }}
           loading="lazy"
         />
         <figcaption>{city.city}</figcaption>

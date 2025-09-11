@@ -36,6 +36,13 @@ h1 {
   color: white;
 }
 
+.clock-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
 .clock-city {
   font-size: 1.25rem;
   font-weight: bold;
@@ -50,6 +57,20 @@ h2.clock-city {
 .clock-digital {
   font-size: 1.5rem;
   margin-top: 1rem;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.clock-canvas {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
 }
 
 main {
