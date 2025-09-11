@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import DigitalClock from "../DigitalClock";
 import AnalogClock from "../AnalogClock";
 import type { AnalogClockSettings } from "../interfaces/AnalogClock";
-import cities from "../../public/json/cityList.json"; // or fetch dynamically
+import cities from "../../public/json/cityList.json";
+import { isValidTimeZone } from "../utils/isValidTimeZone";
 
 const analogSettings: AnalogClockSettings = {
   faceColor: '#f4f4f4',
@@ -22,7 +23,7 @@ export default function CityPage() {
 
   useEffect(() => {
   if (city) {
-    localStorage.setItem("lastVisitedCity", city.city); // just the name
+    localStorage.setItem("lastVisitedCity", city.city); 
   }
 }, [city]);
   
@@ -39,8 +40,15 @@ export default function CityPage() {
         alt={`View of ${city.city}`}
         style={{ width: "100%", maxWidth: "600px", borderRadius: "1rem" }}
       />
+
+      {!isValidTimeZone(city.timeZone) ? (
+  <p style={{ color: "red" }}>Invalid time zone: {city.timeZone}</p>
+) : (
+    <>
       <AnalogClock {...analogSettings} timezone={city.timeZone} />
       <DigitalClock timezone={city.timeZone} />
+      </>
+      )}
     </main>
   );
 }
