@@ -1,6 +1,6 @@
 import './App.css'
 import { Routes, Route } from "react-router-dom";
-import CityPage from "./pages/CityPage"; // import your new page
+import CityPage from "./pages/CityPage";
 import CityCard from './components/CityCard';
 import { useState, useEffect } from "react";
 import DigitalClock from "./DigitalClock";
