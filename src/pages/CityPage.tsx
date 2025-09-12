@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import DigitalClock from "../DigitalClock";
 import AnalogClock from "../AnalogClock";
 import type { AnalogClockSettings } from "../interfaces/AnalogClock";
