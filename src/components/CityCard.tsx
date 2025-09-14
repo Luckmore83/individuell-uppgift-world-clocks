@@ -9,7 +9,9 @@ interface City {
   country: string;
   timeZone: string;
 }
-
+// Pros of using Typescript 3:
+// As an example, if I changed cityName to name, the places where it's used would update, or Typescript shows errors until I fix them.
+// If it was in Javascript, I could accidentally forget one spot that needed the change and now I introduced a bug.
 interface CityCardProps {
   city: City;
   settings: AnalogClockSettings;

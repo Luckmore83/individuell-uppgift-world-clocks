@@ -7,6 +7,10 @@ import DigitalClock from "./DigitalClock";
 import AnalogClock from './AnalogClock';
 import type { AnalogClockSettings } from './interfaces/AnalogClock';
 
+// Pros to use Typescript 1:
+// I'm using a typescript-specific interface here to make several properties that make up City. 
+// and I can add to this later if the need arises.
+
 interface City {
   city: string;
   country: string;

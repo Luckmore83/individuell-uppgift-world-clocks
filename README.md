@@ -1,10 +1,17 @@
-**Loggbok**
 
 *Skiss*
 https://www.figma.com/design/TGcIhr3uy7YURWYvzXjydt/Individuell-Uppgift---World-Clocks?node-id=0-1&p=f&t=IhHzuMcmSKpJdHgS-0
 
 *User stories*
 https://trello.com/b/SzgCf9bj/individuell-uppgift-world-clocks
+
+*Hur TypeScript transpileras till JavaScript*
+
+Typescript parsas/översätts från sin speciella typning till vanlig Javascript. Typescript gör så att många funktioner har mer 
+"städad" kod och mer överskådligt. I Javascript hade samma utförande innehållit mer kod, Typescript dekonsturerar bättre.
+I slutändan så måste Typescript transpileras till Javascript för att kunna läsas av t.ex. webbläsare.
+
+**Loggbok**
 
 Började med att styla sidan enligt skissen med rätt bakgrundsfärg och "World Clocks" som titel längst upp.
 
@@ -30,6 +37,19 @@ användaren tittade på. Går att klicka på en länk på startsidan.
 
 Skapat det visuella för att lägga till en egen stad.
 
+Nu kan man lägga till en egen stad med hjälp av IANA-tidszoner.
+
+Lade in en hjälplänk för att få reda på IANA-tidszoner på städer man själv vill lägga in så att det blir korrekt tid.
+
+Egna tillagda städer har ingen bild, så jag har sparat en generisk
+stadsbild som blir default.jpg när staden inte finns med som källa.
+
+Testade att skriva in fel IANA-tidszon för att se vad som händer.
+Sidan krashade totalt.
+
+Skapade en valideringsfil som kollar så att man inte försöker lägga in en tidszon som inte stämmer med IANA.
+
+Kommenterade kod där Typescript har fördelar över Javascript.
 
 
 
